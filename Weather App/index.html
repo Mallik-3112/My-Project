@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="card">
+        <!--Search input-->
+        <div class="search">
+            <input type="text" placeholder="Enter city name">
+            <button><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></button>
+        </div>
+        <!--Error response-->
+        <p class="error">Error: Invalid city name.</p>
+        
+        <div class="weather">
+            <img src="images/drizzle.png" class="weather-icon"><!--weather icon-->
+            <h1>25°c</h1><!--Temperature-->
+            <div class="city">Mumbai</div><!--City Name-->
+        </div>
+        <div class="details">
+        <!--humidity-->
+        <div class="humidity">
+            <img src="images/humidity.png"><!--Humidity icon-->
+            <div class="hum-info">
+            <div class="hum-percent">53%</div>
+            <p>Humidity</p>
+            </div>
+        </div>
+        <!--Wind speed-->
+        <div class="wind">
+            <img src="images/wind.png"><!--wind icon-->
+            <div class="wind-info">
+            <div class="wind-speed">5.66Km/h</div>
+            <p>Wind Speed</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
